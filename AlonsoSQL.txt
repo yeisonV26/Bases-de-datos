@@ -1,0 +1,38 @@
+Comandos para crear las bases de datos 
+
+-- Iniciar Mysql
+ mysql_start
+
+-- entrar a mariaDB:
+ -u root -p 
+
+-- mirar las bases de datos creadas:
+ show databases;
+
+-- crear una base de datos nueva:
+create database
+
+--ingresamos a la base de datos:
+use 
+
+--creamos la tabla:
+create table 
+
+--ingreasamos los datos
+INSERT INTO
+
+--realizamos consultas
+SELECT * FROM `persona` WHERE nombre = 'Tiger'
+
+--realizamos consultas para varios valores
+SELECT * FROM `persona` WHERE nombre = 'Jeremy' AND sexo = 'M'
+
+
+
+UPDATE persona SET edad = (
+SELECT TIMESTAMPDIFF(YEAR,fecha_nacimiento,CURDATE()) AS edad
+     FROM persona
+)
+
+
+
